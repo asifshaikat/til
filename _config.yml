@@ -1,0 +1,24 @@
+# File: _config.yml
+title: Today I Learned
+description: Daily learning journal
+baseurl: "/til"  # Replace with your repo name
+url: "https://github.com/asifshaikat"
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
